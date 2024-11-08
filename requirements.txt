@@ -1,0 +1,8 @@
+torch
+transformers
+datasets
+numpy
+matplotlib
+scipy
+jupyter
+huggingface_hub
