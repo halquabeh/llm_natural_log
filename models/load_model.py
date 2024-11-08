@@ -1,6 +1,5 @@
 from transformers import AutoTokenizer, AutoModelForCausalLM
 import torch
-import numpy as np
 class Model:
     def __init__(self, model_name, device):
         self.device = device
