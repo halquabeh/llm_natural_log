@@ -3,8 +3,8 @@ def generate_number_prompts(number_list):
     return number_list
 
 import random
-
-def generate_prompts(k, num_examples, upper_bound, group_range,interval_function , random_examples=False):
+random.seed(42)
+def generate_prompts(k, num_examples, upper_bound, group_range,interval_function , context='fixed'):
     numbs = {}
     for i in group_range:
         interval = interval_function(i)
@@ -14,8 +14,10 @@ def generate_prompts(k, num_examples, upper_bound, group_range,interval_function
     for i, numb_list in numbs.items():
         prompts[i] = []
         for numb in numb_list:
-            if random_examples:
+            if context == 'random':
                 numbers = [random.randint(0, upper_bound) for _ in range(num_examples)] + [numb]
+            elif context == 'fixed':
+                numbers = [6,2,8] + [numb]
             else:
                 numbers = numbs[i][:num_examples] + [numb]
             prompts[i].append(generate_number_prompts(numbers))
