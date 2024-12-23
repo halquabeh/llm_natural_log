@@ -14,7 +14,7 @@ class Model:
         # Extract the hidden state of the last token from the desired layer
         return hidden_states[layer_index][:, -1, :].detach().cpu()
 
-    def predict(self, prompt):
+    def predict(self, prompt,length=10):
         inputs = self.tokenizer(prompt, return_tensors="pt").to(self.device)
-        outputs = self.model.generate(**inputs)
+        outputs = self.model.generate(**inputs, max_length=length)
         return self.tokenizer.decode(outputs[0], skip_special_tokens=True)
