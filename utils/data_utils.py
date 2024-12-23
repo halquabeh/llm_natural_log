@@ -4,7 +4,7 @@ def generate_number_prompts(number_list):
 
 import random
 random.seed(42)
-def generate_prompts(k, num_examples, upper_bound, group_range,interval_function , context='fixed'):
+def generate_prompts(k, num_examples, upper_bound, group_range,interval_function , context='random'):
     numbs = {}
     for i in group_range:
         interval = interval_function(i)
