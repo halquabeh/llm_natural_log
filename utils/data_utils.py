@@ -39,7 +39,8 @@ import itertools
 # Function to generate symbols dynamically for a given group size
 def generate_symbols(group_size, num_examples):
     # Define the alphabet
-    alphabet = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
+    # alphabet = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
+    alphabet = 'abcdefghijklmnopqrstuvwxyz'
     # Generate all possible combinations of length `group_size`
     symbols = [''.join(comb) for comb in itertools.product(alphabet, repeat=group_size)]
     # Shuffle the symbols to ensure randomness
@@ -65,7 +66,7 @@ def generate_prompts_symbols(k, num_examples, group_range, context='random'):
                 context_symbols = symb_group[:num_examples]
             elif context == 'fixed':
                 # Use a fixed set of symbols for the context
-                context_symbols = ['A', 'B', 'C']
+                context_symbols = ['a', 'b', 'c']
             else:
                 # Use the first `num_examples` symbols from the interval
                 context_symbols = interval[:num_examples]
