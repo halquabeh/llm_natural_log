@@ -81,3 +81,13 @@ def generate_prompts_symbols(k, num_examples, group_range, context='random'):
     
     return prompts
 
+def string_to_number(s):
+    """Converts a string to a base-26 number, where 'a' = 0, 'b' = 1, ..., 'z' = 25."""
+    num = 0
+    for char in s:
+        num = num * 26 + (ord(char) - ord('a')) #get_numerical_value(char, mapping)#
+    return num
+
+def strings_to_numbers(strings):
+    """Converts a list of strings to a list of base-26 numbers."""
+    return [string_to_number(s) for s in strings]
