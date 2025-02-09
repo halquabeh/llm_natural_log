@@ -7,8 +7,9 @@ login(token="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")
 
 # Configuration Settings
 class Config:
-    DEVICE = torch.device("cuda" if torch.cuda.is_available() else "cpu")
-    MODEL_NAME = "meta-llama/Llama-2-7b-hf"
+    DEVICE = torch.device("cuda:2" if torch.cuda.is_available() else "cpu")
+    # MODEL_NAME = "meta-llama/Llama-2-7b-hf"
+    MODEL_NAME = "EleutherAI/pythia-2.8b"
     # MODEL_NAME = "meta-llama/Llama-3.2-1B-Instruct"
     # MODEL_NAME = "openai-community/gpt2-large"
     # TOKENIZER = AutoTokenizer.from_pretrained(MODEL_NAME)
