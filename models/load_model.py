@@ -16,5 +16,5 @@ class Model:
 
     def predict(self, prompt,length=10):
         inputs = self.tokenizer(prompt, return_tensors="pt").to(self.device)
-        outputs = self.model.generate(**inputs, max_length=length)
+        outputs = self.model.generate(**inputs, max_new_tokens=length)
         return self.tokenizer.decode(outputs[0], skip_special_tokens=True)
