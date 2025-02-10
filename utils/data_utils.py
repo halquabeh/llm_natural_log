@@ -36,49 +36,34 @@ def generate_symbol_prompts(symbol_list, group_size):
 import itertools
 # random.seed(42)
 
-# Function to generate symbols dynamically for a given group size
-def generate_symbols(group_size, num_examples):
-    # Define the alphabet
-    # alphabet = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
-    alphabet = 'abcdefghijklmnopqrstuvwxyz'
-    # Generate all possible combinations of length `group_size`
-    symbols = [''.join(comb) for comb in itertools.product(alphabet, repeat=group_size)]
-    # Shuffle the symbols to ensure randomness
-    random.shuffle(symbols)
-    # If num_examples exceeds the number of possible symbols, reuse symbols
-    if num_examples > len(symbols):
-        symbols = random.choices(symbols, k=num_examples)
-    else:
-        symbols = symbols[:num_examples]
+def generate_symbols(group_size, num_examples, base_alphabet='abcdefghijklmnopqrstuvwxyz'):
+    """Generates a list of symbols dynamically for a given group size."""
+    symbols = [''.join(random.choices(base_alphabet, k=random.randint(1, group_size))) for _ in range(num_examples)]
     return symbols
 
 def generate_prompts_symbols(k, num_examples, group_range, context='random'):
     prompts = {}
+    base_alphabet = 'abcdefghijklmnopqrstuvwxyz'
+    
+    # Generate a common set of context symbols from the base alphabet
+    common_context_symbols = generate_symbols(max(group_range), k * num_examples, base_alphabet)
+    
     for i in group_range:
-        # Generate symbols dynamically for the current group size
-        interval = generate_symbols(i, k * (num_examples + 1))
-        symbs = [interval[j * (num_examples + 1):(j + 1) * (num_examples + 1)] for j in range(k)]
-
         prompts[i] = []
-        for symb_group in symbs:
-            if context == 'random':
-                # Randomly select symbols for the context
-                context_symbols = symb_group[:num_examples]
-            elif context == 'fixed':
-                # Use a fixed set of symbols for the context
-                context_symbols = ['a', 'b', 'c']
-            else:
-                # Use the first `num_examples` symbols from the interval
-                context_symbols = interval[:num_examples]
+        
+        for j in range(k):
+            # Select `num_examples` random symbols for context
+            context_symbols = random.sample(common_context_symbols, num_examples)
             
-            # The last input should have `i` symbols (group size)
-            if len(symb_group) >= num_examples + 1:
-                last_input_symbols = [symb_group[-1]]  # Use the last symbol in the group
-                full_symbol_list = context_symbols + last_input_symbols
-                prompts[i].append(generate_symbol_prompts(full_symbol_list, i))
-            else:
-                # Handle cases where there aren't enough symbols
-                print(f"Warning: Not enough symbols for group {i}. Skipping this prompt.")
+            # Generate the last input symbol with exactly `i` letters
+            last_input_symbol = ''.join(random.choices(base_alphabet, k=i))
+            
+            # Construct the full symbol list
+            full_symbol_list = context_symbols + [last_input_symbol]
+            
+            # Format the prompt
+            formatted_prompt = ','.join(f"{s}={s}" for s in full_symbol_list[:-1]) + f",{full_symbol_list[-1]}="
+            prompts[i].append(formatted_prompt)
     
     return prompts
 
