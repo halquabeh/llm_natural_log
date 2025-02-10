@@ -48,9 +48,8 @@ def plot_pca_projections(final_results, file_path):
         axs[idx].set_xlabel('$\log_{10}$(original values)')
         axs[idx].set_ylabel('Transformed Hidden State Projection')
     
-    save_path = os.path.join(os.path.dirname(file_path), 'pca_projections.png')
-    plt.savefig(save_path, dpi=300)
+    plt.savefig(file_path + '.png', dpi=300)
     plt.close()
-    print(f'Figure saved at: {save_path}')
+    print(f'Figure saved at')
 
 
