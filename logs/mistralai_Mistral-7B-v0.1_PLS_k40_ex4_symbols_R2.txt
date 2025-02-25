@@ -1,0 +1,32 @@
+The token has not been saved to the git credentials helper. Pass `add_to_git_credential=True` in this function directly or `--add-to-git-credential` if using via `huggingface-cli` if you want to set the git credential as well.
+Token is valid (permission: read).
+Your token has been saved to /home/bhaskar_mukhoty/.cache/huggingface/token
+Login successful
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:01<00:01,  1.52s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:02<00:00,  1.06s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:02<00:00,  1.13s/it]
+Traceback (most recent call last):
+  File "/home/bhaskar_mukhoty/Hilal/natural_log/main.py", line 43, in <module>
+    model = Model(model_name, device)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bhaskar_mukhoty/Hilal/natural_log/models/load_model.py", line 7, in __init__
+    self.model = AutoModelForCausalLM.from_pretrained(model_name).to(self.device)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bhaskar_mukhoty/miniconda3/envs/mamba/lib/python3.12/site-packages/transformers/modeling_utils.py", line 3156, in to
+    return super().to(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bhaskar_mukhoty/miniconda3/envs/mamba/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1174, in to
+    return self._apply(convert)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/home/bhaskar_mukhoty/miniconda3/envs/mamba/lib/python3.12/site-packages/torch/nn/modules/module.py", line 780, in _apply
+    module._apply(fn)
+  File "/home/bhaskar_mukhoty/miniconda3/envs/mamba/lib/python3.12/site-packages/torch/nn/modules/module.py", line 780, in _apply
+    module._apply(fn)
+  File "/home/bhaskar_mukhoty/miniconda3/envs/mamba/lib/python3.12/site-packages/torch/nn/modules/module.py", line 780, in _apply
+    module._apply(fn)
+  [Previous line repeated 2 more times]
+  File "/home/bhaskar_mukhoty/miniconda3/envs/mamba/lib/python3.12/site-packages/torch/nn/modules/module.py", line 805, in _apply
+    param_applied = fn(param)
+                    ^^^^^^^^^
+  File "/home/bhaskar_mukhoty/miniconda3/envs/mamba/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1160, in convert
+    return t.to(
+           ^^^^^
+torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 224.00 MiB. GPU 3 has a total capacity of 47.54 GiB of which 33.12 MiB is free. Process 529896 has 27.68 GiB memory in use. Including non-PyTorch memory, this process has 19.81 GiB memory in use. Of the allocated memory 19.55 GiB is allocated by PyTorch, and 1.27 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)

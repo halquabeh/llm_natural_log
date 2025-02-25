@@ -1,0 +1,36 @@
+The token has not been saved to the git credentials helper. Pass `add_to_git_credential=True` in this function directly or `--add-to-git-credential` if using via `huggingface-cli` if you want to set the git credential as well.
+Token is valid (permission: read).
+Your token has been saved to /home/bhaskar_mukhoty/.cache/huggingface/token
+Login successful
+Layer 0 - PCA Explained Variance: nan
+Layer 1 - PCA Explained Variance: 0.170
+Layer 2 - PCA Explained Variance: 0.159
+Layer 3 - PCA Explained Variance: 0.140
+Layer 4 - PCA Explained Variance: 0.160
+Layer 5 - PCA Explained Variance: 0.152
+Layer 6 - PCA Explained Variance: 0.166
+Layer 7 - PCA Explained Variance: 0.149
+Layer 8 - PCA Explained Variance: 0.141
+Layer 9 - PCA Explained Variance: 0.158
+Layer 10 - PCA Explained Variance: 0.123
+Layer 11 - PCA Explained Variance: 0.111
+Layer 12 - PCA Explained Variance: 0.101
+Layer 13 - PCA Explained Variance: 0.097
+Layer 14 - PCA Explained Variance: 0.100
+Layer 15 - PCA Explained Variance: 0.101
+Layer 0 - M²: nan, SM: 1.000
+Layer 1 - M²: 0.593, SM: 0.521
+Layer 2 - M²: -0.873, SM: 0.461
+Layer 3 - M²: -0.688, SM: 0.522
+Layer 4 - M²: -0.891, SM: 0.411
+Layer 5 - M²: -0.904, SM: 0.414
+Layer 6 - M²: -0.905, SM: 0.429
+Layer 7 - M²: -0.917, SM: 0.438
+Layer 8 - M²: -0.907, SM: 0.492
+Layer 9 - M²: -0.921, SM: 0.491
+Layer 10 - M²: 0.906, SM: 0.484
+Layer 11 - M²: 0.850, SM: 0.392
+Layer 12 - M²: 0.862, SM: 0.279
+Layer 13 - M²: 0.813, SM: 0.234
+Layer 14 - M²: 0.712, SM: 0.030
+Layer 15 - M²: -0.594, SM: 0.069

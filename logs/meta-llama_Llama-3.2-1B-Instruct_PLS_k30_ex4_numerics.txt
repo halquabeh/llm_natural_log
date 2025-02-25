@@ -1,0 +1,35 @@
+The token has not been saved to the git credentials helper. Pass `add_to_git_credential=True` in this function directly or `--add-to-git-credential` if using via `huggingface-cli` if you want to set the git credential as well.
+Token is valid (permission: read).
+Your token has been saved to /home/bhaskar_mukhoty/.cache/huggingface/token
+Login successful
+Layer 0 encountered an issue: illegal value in 4th argument of internal gesdd
+Layer 1 - PLS R²: 0.564
+Layer 2 - PLS R²: 0.681
+Layer 3 - PLS R²: 0.662
+Layer 4 - PLS R²: 0.685
+Layer 5 - PLS R²: 0.660
+Layer 6 - PLS R²: 0.741
+Layer 7 - PLS R²: 0.743
+Layer 8 - PLS R²: 0.728
+Layer 9 - PLS R²: 0.718
+Layer 10 - PLS R²: 0.689
+Layer 11 - PLS R²: 0.665
+Layer 12 - PLS R²: 0.648
+Layer 13 - PLS R²: 0.631
+Layer 14 - PLS R²: 0.619
+Layer 15 - PLS R²: 0.592
+Layer 1 - M²: -0.629, SM: 1.880
+Layer 2 - M²: 0.851, SM: 8.042
+Layer 3 - M²: 0.933, SM: 1.948
+Layer 4 - M²: 0.892, SM: 2.219
+Layer 5 - M²: -0.889, SM: 1.788
+Layer 6 - M²: 0.891, SM: 2.441
+Layer 7 - M²: 0.898, SM: 2.433
+Layer 8 - M²: -0.908, SM: 2.090
+Layer 9 - M²: -0.910, SM: 2.011
+Layer 10 - M²: 0.902, SM: 1.739
+Layer 11 - M²: -0.887, SM: 1.797
+Layer 12 - M²: -0.866, SM: 2.223
+Layer 13 - M²: 0.853, SM: 2.157
+Layer 14 - M²: -0.840, SM: 2.305
+Layer 15 - M²: 0.830, SM: 1.831

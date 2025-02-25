@@ -1,0 +1,69 @@
+The token has not been saved to the git credentials helper. Pass `add_to_git_credential=True` in this function directly or `--add-to-git-credential` if using via `huggingface-cli` if you want to set the git credential as well.
+Token is valid (permission: read).
+Your token has been saved to /home/bhaskar_mukhoty/.cache/huggingface/token
+Login successful
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:01<00:01,  1.46s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:02<00:00,  1.07it/s]Loading checkpoint shards: 100%|██████████| 2/2 [00:02<00:00,  1.01s/it]
+Layer 0 - PCA Explained Variance: nan
+Layer 1 - PCA Explained Variance: 0.384
+Layer 2 - PCA Explained Variance: 0.451
+Layer 3 - PCA Explained Variance: 0.572
+Layer 4 - PCA Explained Variance: 0.563
+Layer 5 - PCA Explained Variance: 0.372
+Layer 6 - PCA Explained Variance: 0.307
+Layer 7 - PCA Explained Variance: 0.282
+Layer 8 - PCA Explained Variance: 0.240
+Layer 9 - PCA Explained Variance: 0.227
+Layer 10 - PCA Explained Variance: 0.221
+Layer 11 - PCA Explained Variance: 0.221
+Layer 12 - PCA Explained Variance: 0.190
+Layer 13 - PCA Explained Variance: 0.188
+Layer 14 - PCA Explained Variance: 0.178
+Layer 15 - PCA Explained Variance: 0.173
+Layer 16 - PCA Explained Variance: 0.181
+Layer 17 - PCA Explained Variance: 0.182
+Layer 18 - PCA Explained Variance: 0.164
+Layer 19 - PCA Explained Variance: 0.164
+Layer 20 - PCA Explained Variance: 0.219
+Layer 21 - PCA Explained Variance: 0.214
+Layer 22 - PCA Explained Variance: 0.220
+Layer 23 - PCA Explained Variance: 0.217
+Layer 24 - PCA Explained Variance: 0.214
+Layer 25 - PCA Explained Variance: 0.215
+Layer 26 - PCA Explained Variance: 0.220
+Layer 27 - PCA Explained Variance: 0.213
+Layer 28 - PCA Explained Variance: 0.209
+Layer 29 - PCA Explained Variance: 0.244
+Layer 30 - PCA Explained Variance: 0.252
+Layer 31 - PCA Explained Variance: 0.240
+Layer 0 - M²: nan, SM: 1.000
+Layer 1 - M²: 0.824, SM: 0.860
+Layer 2 - M²: 0.948, SM: 0.687
+Layer 3 - M²: 0.967, SM: 0.754
+Layer 4 - M²: 0.985, SM: 0.821
+Layer 5 - M²: 0.963, SM: 0.771
+Layer 6 - M²: -0.963, SM: 1.159
+Layer 7 - M²: -0.935, SM: 1.281
+Layer 8 - M²: -0.948, SM: 0.825
+Layer 9 - M²: 0.932, SM: 1.002
+Layer 10 - M²: 0.946, SM: 0.688
+Layer 11 - M²: 0.945, SM: 0.473
+Layer 12 - M²: 0.943, SM: 0.439
+Layer 13 - M²: 0.925, SM: 0.347
+Layer 14 - M²: 0.906, SM: 0.293
+Layer 15 - M²: 0.838, SM: 0.148
+Layer 16 - M²: 0.867, SM: 0.179
+Layer 17 - M²: 0.843, SM: 0.261
+Layer 18 - M²: 0.772, SM: 0.386
+Layer 19 - M²: 0.662, SM: 0.541
+Layer 20 - M²: 0.357, SM: 0.608
+Layer 21 - M²: 0.362, SM: 0.665
+Layer 22 - M²: 0.336, SM: 0.683
+Layer 23 - M²: 0.372, SM: 0.683
+Layer 24 - M²: 0.403, SM: 0.691
+Layer 25 - M²: 0.433, SM: 0.672
+Layer 26 - M²: 0.424, SM: 0.735
+Layer 27 - M²: 0.434, SM: 0.695
+Layer 28 - M²: 0.431, SM: 0.685
+Layer 29 - M²: 0.249, SM: 2.082
+Layer 30 - M²: 0.282, SM: 1.257
+Layer 31 - M²: -0.258, SM: 1.401

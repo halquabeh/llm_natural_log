@@ -1,0 +1,1 @@
+python3 main.py                         --model_name "meta-llama/Llama-2-7b-hf"                         --transform PCA                         --k 40                         --num_examples 4                         --data numerics                         --device 3                         > logs/meta-llama_Llama-2-7b-hf_PCA_k40_ex4_numerics_R4.txt 2>&1

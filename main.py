@@ -26,7 +26,7 @@ parser.add_argument('--Tdim', type=int, default=1, help='Transform dimension')
 parser.add_argument('--k', type=int, default=30, help='Number of samples')
 parser.add_argument('--num_examples', type=int, default=3, help='Number of examples')
 parser.add_argument('--upper_bound', type=int, default=100, help='Upper bound for random numbers')
-parser.add_argument('--context', type=str, default='random', help='Context type')
+parser.add_argument('--context', type=str, default='same', help='Context type')
 parser.add_argument('--data', type=str, default='numerics', help='Data type')
 parser.add_argument('--groups', nargs='+', type=int, default=[1,2,3,4], help='Group sizes')
 parser.add_argument('--save', action='store_true', default=True, help='Save results')
@@ -76,7 +76,7 @@ for idx, layer in enumerate(list(range(0, model.model.config.num_hidden_layers, 
 
 # Apply T(x) using PLS or PCA
 from utils.compute_utils import transform_hidden_states,analyze_transformed_hidden_states
-results_T = transform_hidden_states(results,args.transfom,args.Tdim)
+results_T = transform_hidden_states(results,args.transform,args.Tdim)
 
 # Coompute the metris for sublineraity and monotonicity:results_T
 results_analysis = analyze_transformed_hidden_states(results_T)
@@ -87,5 +87,5 @@ import os
 # plot_pca_projections(results_analysis, save_path)
 
 
-save_path = os.path.join('checkpoints', f'{model_name.replace("/", "_")}_{args.data}_{args.transfom}_{args.Tdim}_{args.num_examples}_{args.k}.pth')
+save_path = os.path.join('checkpoints', f'{model_name.replace("/", "_")}_{args.data}_{args.transform}_{args.Tdim}_{args.num_examples}_{args.k}_R4.pth')
 torch.save(results_analysis, save_path)

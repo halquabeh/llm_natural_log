@@ -1,0 +1,67 @@
+The token has not been saved to the git credentials helper. Pass `add_to_git_credential=True` in this function directly or `--add-to-git-credential` if using via `huggingface-cli` if you want to set the git credential as well.
+Token is valid (permission: read).
+Your token has been saved to /home/bhaskar_mukhoty/.cache/huggingface/token
+Login successful
+Layer 0 encountered an issue: illegal value in 4th argument of internal gesdd
+Layer 1 - PLS R²: 0.691
+Layer 2 - PLS R²: 0.719
+Layer 3 - PLS R²: 0.712
+Layer 4 - PLS R²: 0.652
+Layer 5 - PLS R²: 0.712
+Layer 6 - PLS R²: 0.697
+Layer 7 - PLS R²: 0.688
+Layer 8 - PLS R²: 0.667
+Layer 9 - PLS R²: 0.680
+Layer 10 - PLS R²: 0.676
+Layer 11 - PLS R²: 0.695
+Layer 12 - PLS R²: 0.695
+Layer 13 - PLS R²: 0.694
+Layer 14 - PLS R²: 0.685
+Layer 15 - PLS R²: 0.681
+Layer 16 - PLS R²: 0.687
+Layer 17 - PLS R²: 0.675
+Layer 18 - PLS R²: 0.654
+Layer 19 - PLS R²: 0.610
+Layer 20 - PLS R²: 0.599
+Layer 21 - PLS R²: 0.584
+Layer 22 - PLS R²: 0.591
+Layer 23 - PLS R²: 0.586
+Layer 24 - PLS R²: 0.576
+Layer 25 - PLS R²: 0.570
+Layer 26 - PLS R²: 0.564
+Layer 27 - PLS R²: 0.564
+Layer 28 - PLS R²: 0.568
+Layer 29 - PLS R²: 0.572
+Layer 30 - PLS R²: 0.585
+Layer 31 - PLS R²: 0.621
+Layer 1 - M²: 0.748, SM: 5.439
+Layer 2 - M²: -0.919, SM: 2.311
+Layer 3 - M²: -0.943, SM: 1.881
+Layer 4 - M²: -0.959, SM: 1.169
+Layer 5 - M²: -0.956, SM: 1.443
+Layer 6 - M²: -0.953, SM: 1.323
+Layer 7 - M²: -0.951, SM: 1.268
+Layer 8 - M²: -0.948, SM: 1.171
+Layer 9 - M²: -0.943, SM: 1.252
+Layer 10 - M²: -0.943, SM: 1.259
+Layer 11 - M²: 0.943, SM: 1.361
+Layer 12 - M²: 0.945, SM: 1.361
+Layer 13 - M²: 0.944, SM: 1.404
+Layer 14 - M²: 0.932, SM: 1.388
+Layer 15 - M²: 0.920, SM: 1.471
+Layer 16 - M²: 0.899, SM: 1.732
+Layer 17 - M²: -0.888, SM: 1.827
+Layer 18 - M²: -0.880, SM: 1.831
+Layer 19 - M²: -0.872, SM: 1.715
+Layer 20 - M²: -0.868, SM: 1.660
+Layer 21 - M²: -0.870, SM: 1.596
+Layer 22 - M²: -0.867, SM: 1.706
+Layer 23 - M²: 0.865, SM: 1.671
+Layer 24 - M²: -0.863, SM: 1.682
+Layer 25 - M²: -0.862, SM: 1.711
+Layer 26 - M²: -0.860, SM: 1.762
+Layer 27 - M²: -0.858, SM: 1.855
+Layer 28 - M²: -0.857, SM: 1.911
+Layer 29 - M²: -0.854, SM: 2.035
+Layer 30 - M²: 0.855, SM: 2.119
+Layer 31 - M²: 0.847, SM: 2.749
