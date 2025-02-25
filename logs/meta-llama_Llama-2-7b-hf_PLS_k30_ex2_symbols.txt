@@ -1,0 +1,68 @@
+The token has not been saved to the git credentials helper. Pass `add_to_git_credential=True` in this function directly or `--add-to-git-credential` if using via `huggingface-cli` if you want to set the git credential as well.
+Token is valid (permission: read).
+Your token has been saved to /home/bhaskar_mukhoty/.cache/huggingface/token
+Login successful
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:01<00:01,  1.58s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:02<00:00,  1.02s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:02<00:00,  1.11s/it]
+Layer 0 encountered an issue: illegal value in 4th argument of internal gesdd
+Layer 1 - PLS R²: 0.257
+Layer 2 - PLS R²: 0.406
+Layer 3 - PLS R²: 0.404
+Layer 4 - PLS R²: 0.400
+Layer 5 - PLS R²: 0.428
+Layer 6 - PLS R²: 0.429
+Layer 7 - PLS R²: 0.436
+Layer 8 - PLS R²: 0.449
+Layer 9 - PLS R²: 0.445
+Layer 10 - PLS R²: 0.427
+Layer 11 - PLS R²: 0.436
+Layer 12 - PLS R²: 0.441
+Layer 13 - PLS R²: 0.446
+Layer 14 - PLS R²: 0.448
+Layer 15 - PLS R²: 0.461
+Layer 16 - PLS R²: 0.462
+Layer 17 - PLS R²: 0.489
+Layer 18 - PLS R²: 0.476
+Layer 19 - PLS R²: 0.473
+Layer 20 - PLS R²: 0.479
+Layer 21 - PLS R²: 0.471
+Layer 22 - PLS R²: 0.489
+Layer 23 - PLS R²: 0.497
+Layer 24 - PLS R²: 0.499
+Layer 25 - PLS R²: 0.502
+Layer 26 - PLS R²: 0.498
+Layer 27 - PLS R²: 0.506
+Layer 28 - PLS R²: 0.498
+Layer 29 - PLS R²: 0.495
+Layer 30 - PLS R²: 0.499
+Layer 31 - PLS R²: 0.504
+Layer 1 - M²: -0.598, SM: 2.184
+Layer 2 - M²: -0.815, SM: 1.190
+Layer 3 - M²: 0.906, SM: 0.880
+Layer 4 - M²: 0.938, SM: 0.789
+Layer 5 - M²: 0.944, SM: 0.845
+Layer 6 - M²: -0.940, SM: 0.863
+Layer 7 - M²: -0.934, SM: 0.906
+Layer 8 - M²: 0.928, SM: 0.974
+Layer 9 - M²: -0.931, SM: 0.946
+Layer 10 - M²: 0.928, SM: 0.919
+Layer 11 - M²: 0.935, SM: 0.929
+Layer 12 - M²: 0.939, SM: 0.941
+Layer 13 - M²: -0.941, SM: 0.959
+Layer 14 - M²: 0.943, SM: 0.960
+Layer 15 - M²: -0.948, SM: 0.983
+Layer 16 - M²: -0.948, SM: 0.986
+Layer 17 - M²: -0.955, SM: 1.004
+Layer 18 - M²: 0.953, SM: 1.005
+Layer 19 - M²: 0.954, SM: 0.963
+Layer 20 - M²: 0.952, SM: 0.970
+Layer 21 - M²: 0.950, SM: 0.952
+Layer 22 - M²: 0.941, SM: 1.033
+Layer 23 - M²: 0.936, SM: 1.058
+Layer 24 - M²: 0.934, SM: 1.065
+Layer 25 - M²: 0.933, SM: 1.073
+Layer 26 - M²: 0.929, SM: 1.086
+Layer 27 - M²: 0.924, SM: 1.109
+Layer 28 - M²: 0.921, SM: 1.089
+Layer 29 - M²: 0.913, SM: 1.086
+Layer 30 - M²: 0.909, SM: 1.096
+Layer 31 - M²: 0.908, SM: 1.114

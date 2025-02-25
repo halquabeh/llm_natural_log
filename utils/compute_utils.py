@@ -196,7 +196,7 @@ def analyze_transformed_hidden_states(transformed_hidden_states):
         M2 = compute_monotonicity(all_answers, all_representations)
         SM = compute_sublinearity(hidden_states)
 
-        print(f'Layer {layer} - M²: {M2:.3f}, SM: {SM:.3f}')
+        print(f'Layer {layer} -EV: {hidden_states['variance']},  M²: {M2:.3f}, SM: {SM:.3f}')
 
         # Store metrics in the dictionary
         transformed_hidden_states[layer]['monotonicity_metric'] = M2
