@@ -30,15 +30,13 @@ Below are some visualizations of our results:
 If you find our work useful, please cite our paper:
 
 ```bibtex
-@article{your_paper_key,
-  title={Your Paper Title},
-  author={Author1, Firstname and Author2, Firstname},
-  journal={Journal/Conference Name},
-  year={Year},
-  volume={Volume},
-  number={Issue},
-  pages={Pages}
+@article{alquboj2025number,
+  title={Number Representations in LLMs: A Computational Parallel to Human Perception},
+  author={AlquBoj, HV and AlQuabeh, Hilal and Bojkovic, Velibor and Hiraoka, Tatsuya and El-Shangiti, Ahmed Oumar and Nwadike, Munachiso and Inui, Kentaro},
+  journal={arXiv preprint arXiv:2502.16147},
+  year={2025}
 }
+
 ```
 ## How to Run the Code
 ```markdown
