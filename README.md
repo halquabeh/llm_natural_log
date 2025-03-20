@@ -45,8 +45,8 @@ To reproduce our results, follow these steps:
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your_username/your_repo_name.git
-   cd your_repo_name
+   git clone the repo
+   cd repo_name
   ```
 2- Find the metrics for given models as follow (update the models and setting in the .sh file)
 ```bash
