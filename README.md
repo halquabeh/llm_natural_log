@@ -17,11 +17,11 @@ Humans are believed to perceive numbers on a logarithmic mental number line, whe
 
 Below are some visualizations of our results:
 
-![Figure 1: Comparison of several models on Numbers and Letters groups, evaluated using three metrics: $\rho$, $\beta$, and $R^2$. Results are reported for the layer with the highest $R^2$. Standard deviations are included.](plot1.png)
-*Caption: A brief explanation of the figure.*
+![Figure 1:](plot1.png)
+*Caption: Comparison of several models on Numbers and Letters groups, evaluated using three metrics: $\rho$, $\beta$, and $R^2$. Results are reported for the layer with the highest $R^2$. Standard deviations are included.*
 
-![Figure 2: Projections of letters representations (y-axis) against their log-scaled magnitudes (x-axis) assigned proportional to their length, for the layer with the highest explained variance in four models. Sublinearity and monotonicity ($\rho$) are indicated above each subfigure, demonstrating consistent sublinear trends and strong monotonic relationships across models.](plot2.png)
-*Caption: Another brief explanation of the figure.*
+![Figure 2:](plot2.png)
+*Caption: Projections of letters representations (y-axis) against their log-scaled magnitudes (x-axis) assigned proportional to their length, for the layer with the highest explained variance in four models. Sublinearity and monotonicity ($\rho$) are indicated above each subfigure, demonstrating consistent sublinear trends and strong monotonic relationships across models.*
 
 
 
