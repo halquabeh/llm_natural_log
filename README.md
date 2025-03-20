@@ -45,8 +45,8 @@ If you find our work useful, please cite our paper:
   number={Issue},
   pages={Pages}
 }
-
-## How to Run the Code**
+```
+## How to Run the Code
 ```markdown
 
 To reproduce our results, follow these steps:
@@ -60,4 +60,4 @@ To reproduce our results, follow these steps:
 
 3- To reporoduce the results in the paper, run the following code.
 
-
+```
