@@ -55,9 +55,11 @@ To reproduce our results, follow these steps:
    ```bash
    git clone https://github.com/your_username/your_repo_name.git
    cd your_repo_name
-
-2- python main.py
-
+  ```
+2- Find the metrics for given models as follow 
+```bash
+  python main.py
+```
 3- To reporoduce the results in the paper, run the following code.
 
 ```
