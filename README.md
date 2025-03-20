@@ -30,24 +30,6 @@ Below are some visualizations of our results:
 *Caption: Another brief explanation of the figure.*
 
 
----
-
-### **6. How to Run the Code**
-If your repository includes code, provide clear instructions on how to set up and run it. This is crucial for reproducibility.
-
-```markdown
-## How to Run the Code
-
-To reproduce our results, follow these steps:
-
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/your_username/your_repo_name.git
-   cd your_repo_name
-
-2- python main.py
-
-3- To reporoduce the results in the paper, run the following code.
 
 ## Citations
 
@@ -63,4 +45,19 @@ If you find our work useful, please cite our paper:
   number={Issue},
   pages={Pages}
 }
+
+## How to Run the Code**
+```markdown
+
+To reproduce our results, follow these steps:
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/your_username/your_repo_name.git
+   cd your_repo_name
+
+2- python main.py
+
+3- To reporoduce the results in the paper, run the following code.
+
 
