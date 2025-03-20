@@ -1,5 +1,5 @@
 # Number Representations in LLMs: A Computational Parallel to Human Perception
-![Figure 0: Description of Figure](overview.png)
+![Figure 0: Method Overview](overview.png)
 
 ## Table of Contents
 - [Motivation](#motivation)
@@ -15,18 +15,12 @@ Humans are believed to perceive numbers on a logarithmic mental number line, whe
 
 ## Results
 
-Our approach achieves the following key results:
-
-- **Result 1**: [Briefly describe the result, e.g., "Improved accuracy by X% compared to baseline."]
-- **Result 2**: [e.g., "Reduced computation time by Y%."]
-- **Result 3**: [e.g., "Demonstrated robustness under Z conditions."]
-
 Below are some visualizations of our results:
 
-![Figure 1: Description of Figure](plot1.png)
+![Figure 1: Comparison of several models on Numbers and Letters groups, evaluated using three metrics: $\rho$, $\beta$, and $R^2$. Results are reported for the layer with the highest $R^2$. Standard deviations are included.](plot1.png)
 *Caption: A brief explanation of the figure.*
 
-![Figure 2: Description of Figure](plot2.png)
+![Figure 2: Projections of letters representations (y-axis) against their log-scaled magnitudes (x-axis) assigned proportional to their length, for the layer with the highest explained variance in four models. Sublinearity and monotonicity ($\rho$) are indicated above each subfigure, demonstrating consistent sublinear trends and strong monotonic relationships across models.](plot2.png)
 *Caption: Another brief explanation of the figure.*
 
 
