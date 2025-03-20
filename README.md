@@ -1,9 +1,9 @@
 # Number Representations in LLMs: A Computational Parallel to Human Perception
+![Figure 0: Description of Figure](overview.png)
 
 ## Table of Contents
 - [Motivation](#motivation)
 - [Results](#results)
-- [Methodology](#methodology)
 - [Figures](#figures)
 - [Citations](#citations)
 - [How to Run the Code](#how-to-run-the-code)
@@ -23,8 +23,44 @@ Our approach achieves the following key results:
 
 Below are some visualizations of our results:
 
-![Figure 1: Description of Figure](plot1.pdf)
+![Figure 1: Description of Figure](plot1.png)
 *Caption: A brief explanation of the figure.*
 
-![Figure 2: Description of Figure](plot2.pdf)
+![Figure 2: Description of Figure](plot2.png)
 *Caption: Another brief explanation of the figure.*
+
+
+---
+
+### **6. How to Run the Code**
+If your repository includes code, provide clear instructions on how to set up and run it. This is crucial for reproducibility.
+
+```markdown
+## How to Run the Code
+
+To reproduce our results, follow these steps:
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/your_username/your_repo_name.git
+   cd your_repo_name
+
+2- python main.py
+
+3- To reporoduce the results in the paper, run the following code.
+
+## Citations
+
+If you find our work useful, please cite our paper:
+
+```bibtex
+@article{your_paper_key,
+  title={Your Paper Title},
+  author={Author1, Firstname and Author2, Firstname},
+  journal={Journal/Conference Name},
+  year={Year},
+  volume={Volume},
+  number={Issue},
+  pages={Pages}
+}
+
