@@ -48,8 +48,7 @@ To reproduce our results, follow these steps:
    git clone the repo
    cd repo_name
   ```
-2- Find the metrics for given models as follow (update the models and setting in the .sh file)
-```bash
-  run.sh
-```
-```
+Add the login token in main.py
+2- Find the metrics by running run.sh (after updating the models and setting in the .sh file)
+
+
