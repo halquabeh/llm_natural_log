@@ -44,14 +44,14 @@ If you find our work useful, please cite our paper:
 To reproduce our results, follow these steps:
 
 1. Clone the repository:
-   ```bash
+   ```
    git clone the repo
    cd repo_name
   ```
 Add the login token in main.py
 
 2. Find the metrics by running run.sh (after updating the models and setting in the .sh file)
-   ```bash
+   ```
    ./run.sh
   ```
 
