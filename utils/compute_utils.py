@@ -117,7 +117,7 @@ def transform_hidden_states(all_layers_hidden_states, method="PCA", num_componen
             transformed_hidden_states[layer] = {
                 'hidden_states': reduced_hidden_states,
                 'answers': hidden_states['answers'],
-                'Explained_variance': Variances  # Either R² or explained variance
+                'variance': Variances  # Either R² or explained variance
             }
 
         except ValueError as e:
