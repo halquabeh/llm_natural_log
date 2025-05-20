@@ -18,8 +18,8 @@ DATA_TYPES=("numerics")
 DEVICES=(2 3)
 
 # Clean and create logs directory
-# rm -rf logs/*
-# mkdir -p logs
+rm -rf logs/*
+mkdir -p logs
 
 # Create command file
 cmd_file="job_commands.txt"
