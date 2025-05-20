@@ -48,11 +48,9 @@ To reproduce our results, follow these steps:
    git clone the repo
    cd repo_name
   ```
-Add the login token in main.py
+2. Add the login token in main.py.
 
-2. Find the metrics by running run.sh (after updating the models and setting in the .sh file)
+3. Find the metrics by running run.sh (after updating the models and setting in the .sh file)
    ```
    ./run.sh
   ```
-
-
