@@ -2,7 +2,7 @@
 import torch
 from models.load_model import Model
 from huggingface_hub import login
-login(token="Enter yours Here")
+login(token="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")
 # fix the seeds
 seed = 42
 torch.manual_seed(seed)

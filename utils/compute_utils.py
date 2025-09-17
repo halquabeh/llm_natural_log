@@ -102,22 +102,25 @@ def transform_hidden_states(all_layers_hidden_states, method="PCA", num_componen
                 principal_components = model.transform(all_representations)
                 Variances = model.score(all_representations, all_answers)  # R² score
                 print(f'Layer {layer} - PLS R²: {Variances:.3f}')
+                first_direction = model.x_weights_[:, 0]  # First direction of PLS
             else:
                 model = PCA(n_components=num_components)
                 principal_components = model.fit_transform(all_representations)
                 Variances = model.explained_variance_ratio_.sum()  # Explained variance
                 print(f'Layer {layer} - PCA Explained Variance: {Variances:.3f}')
+                first_direction = model.components_[0]  # First direction of PCA
 
             # Restore the group structure
             reduced_hidden_states = {}
             for group, indices in group_indices.items():
                 reduced_hidden_states[group] = [principal_components[i].tolist() for i in indices]
 
-            # Save the transformed hidden states and transformation metric
+            # Save the transformed hidden states, transformation metric, and first direction
             transformed_hidden_states[layer] = {
                 'hidden_states': reduced_hidden_states,
                 'answers': hidden_states['answers'],
-                'Explained_variance': Variances  # Either R² or explained variance
+                'Explained_variance': Variances,  # Either R² or explained variance
+                'First_direction': first_direction.tolist()  # First direction of PCA or PLS
             }
 
         except ValueError as e:
@@ -196,7 +199,7 @@ def analyze_transformed_hidden_states(transformed_hidden_states):
         M2 = compute_monotonicity(all_answers, all_representations)
         SM = compute_sublinearity(hidden_states)
 
-        print(f'Layer {layer} -EV: {hidden_states['variance']},  M²: {M2:.3f}, SM: {SM:.3f}')
+        print(f'Layer {layer} -EV: {hidden_states["Explained_variance"]},  M²: {M2:.3f}, SM: {SM:.3f}')
 
         # Store metrics in the dictionary
         transformed_hidden_states[layer]['monotonicity_metric'] = M2

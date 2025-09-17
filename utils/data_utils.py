@@ -26,6 +26,7 @@ def generate_prompts_numerals(k, num_examples, upper_bound, group_range,interval
 
 
 
+
 def generate_symbol_prompts(symbol_list, group_size):
     # Join all symbols except the last one with commas
     context = ','.join([f"{sym}={sym}" for sym in symbol_list[:-1]])
