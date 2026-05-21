@@ -1,7 +1,7 @@
 # Natural Log
 
 Code for the number-representation experiments: Number representations in LLMs: A computational parallel to human perception.
-[url press](https://openreview.net/forum?id=m3m5sNVNDe)
+[Link](https://openreview.net/forum?id=m3m5sNVNDe)
 ## Install
 
 ```bash
