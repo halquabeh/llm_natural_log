@@ -85,7 +85,7 @@ class ExperimentConfig:
     device: str = "0"
     runs: int = 3
     seed: int = 42
-    save_dir: Path = Path("ICLR_results")
+    save_dir: Path = Path("f_results")
     log_dir: Path = Path("logs")
     hf_token: str | None = None
     local_files_only: bool = False

@@ -1,7 +1,7 @@
 # Natural Log
 
-Code for the number-representation experiments>.
-
+Code for the number-representation experiments: Number representations in LLMs: A computational parallel to human perception.
+[url press](https://openreview.net/forum?id=m3m5sNVNDe)
 ## Install
 
 ```bash
@@ -45,4 +45,13 @@ Motivating downstream comparison result:
 python scripts/run_numeric_comparison.py --model gpt2 --groups 1,2,3,4,5 --device 0
 ```
 
-All scripts log to the terminal and to `logs/*.log`. Results are written under `ICLR_results/`.
+All scripts log to the terminal and to `logs/*.log`. Results are written under `results/`.
+
+```bibtex
+@article{alquboj2025number,
+  title={Number representations in llms: A computational parallel to human perception},
+  author={AlquBoj, HV and AlQuabeh, Hilal and Bojkovic, Velibor and Hiraoka, Tatsuya and El-Shangiti, Ahmed Oumar and Nwadike, Munachiso and Inui, Kentaro},
+  journal={arXiv preprint arXiv:2502.16147},
+  year={2025}
+}
+```

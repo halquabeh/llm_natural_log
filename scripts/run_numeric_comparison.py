@@ -32,7 +32,7 @@ def main() -> None:
     parser.add_argument("--pairs", type=int, default=100)
     parser.add_argument("--gaps", default="1,5,10")
     parser.add_argument("--device", default="0")
-    parser.add_argument("--save-dir", default="ICLR_results")
+    parser.add_argument("--save-dir", default="f_results")
     parser.add_argument("--log-dir", default="logs")
     parser.add_argument("--local-files-only", action="store_true")
     args = parser.parse_args()
